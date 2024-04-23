@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Section</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: linear-gradient(135deg, #fc6076, #ff9a44); 
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-fluid {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 25px; 
+      background-color: rgba(255, 255, 255, 0.3); 
+      margin: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s; 
+    }
+
+    li:hover {
+      background-color: rgba(255, 255, 255, 0.7); 
+      color: #333;
+    }
+
+    .section {
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 20px; 
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    }
+
+    .section h1 {
+      margin: 0;
+      font-size: 40px; 
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    }
+
+    .image {
+      height: 200px; 
+      width: 300px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); 
+      transition: transform 0.3s ease;
+    }
+
+    .image:hover {
+      transform: scale(1.05); 
+    }
+
+    .first {
+      background: linear-gradient(135deg, #5d973b, #ff9a44);
+    }
+
+    .second {
+      background: linear-gradient(135deg, #ad3a0d77, #bac8e0); 
+    }
+
+    .add-to-cart {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .add-to-cart:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <ul class="list-inline justify-content-center"> 
+        <li><a href="mainpage.html" style="text-decoration: none; color: #fff;">Home</a></li>
+        <li><a href="about.html" style="text-decoration: none; color: #fff;">About</a></li>
+        <li><a href="contact.html" style="text-decoration: none; color: #fff;">Contact Us</a></li>
+        <li><a href="more.html" style="text-decoration: none; color: #fff;">More</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <ul class="list-inline justify-content-center"> 
+      <li> <h1 ><b>Sports Items Available Here</b></h1></li>
+    </ul>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <div class="section first">
+          <img class="image" src="cricketbat.jpg" alt="Cricket Bat">
+          <h1>Cricket Bat</h1>
+          <p>Rs 480</p>
+          <button class="add-to-cart" onclick="addToCart('Cricket Bat', 480)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section first">
+          <img class="image" src="football.jpg" alt="Football">
+          <h1>Football</h1>
+          <p>Rs 550</p>
+          <button class="add-to-cart" onclick="addToCart('Football', 550)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <div class="section second">
+          <img class="image" src="vollyball.jpg" alt="Volleyball">
+          <h1>Volleyball</h1>
+          <p>Rs 420</p>
+          <button class="add-to-cart" onclick="addToCart('Volleyball', 420)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section second">
+          <img class="image" src="Basketball.jpg" alt="BasketBall">
+          <h1>BasketBall</h1>
+          <p>Rs 700</p>
+          <button class="add-to-cart" onclick="addToCart('BasketBall', 700)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <div class="section first">
+          <img class="image" src="cricketball.jpg" alt="Cricket Ball">
+          <h1>Cricket Ball</h1>
+          <p>Rs 120</p>
+          <button class="add-to-cart" onclick="addToCart('Cricket Ball', 120)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section first">
+          <img class="image" src="hockey_stick.jpg" alt="Hockey Stick">
+          <h1>Hockey Stick</h1>
+          <p>Rs 350</p>
+          <button class="add-to-cart" onclick="addToCart('Hockey Stick ', 350)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <div class="section second">
+          <img class="image" src="badminton.jpg" alt="Badminton">
+          <h1>Badminton</h1>
+          <p>Rs 320</p>
+          <button class="add-to-cart" onclick="addToCart('Badminton', 320)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section second">
+          <img class="image" src="sportsdress.jpg" alt="Sports Dress">
+          <h1>Sports Dress</h1>
+          <p>Rs 450</p>
+          <button class="add-to-cart" onclick="addToCart('Sports Dress', 450)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <div class="section first">
+          <img class="image" src="tennis_racket.jpg" alt="Tennis Racket">
+          <h1>Tennis Racket</h1>
+          <p>Rs 1100</p>
+          <button class="add-to-cart" onclick="addToCart('Tennis Racket', 1100)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section first">
+          <img class="image" src="acc.jpg" alt="Sports Accessories">
+          <h1>Sports Accessories</h1>
+          <p>Rs 200</p>
+          <button class="add-to-cart" onclick="addToCart('Sports Accessories', 200)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <ul class="list-inline justify-content-center"> 
+      <li> <h1 onclick="checkout()">Checkout</h1></li>
+    </ul>
+  </div>
+  <script>
+    function addToCart(item, price) {
+      var cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ item: item, price: price });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert('Item added to cart!');
+      console.log(cart);
+      console.log(JSON.stringify(cart));
+    }
+
+    function checkout() {
+      var orderId = generateOrderId();
+      var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+      localStorage.setItem('orderId', orderId);
+      fetch('http://localhost:4000/checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cartItems)
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log("Items added to cart:", data);
+        alert('Your order has been placed! Your Order ID is: ' + data.orderId + '. Total Value: ' + data.totalValue);
+        localStorage.removeItem('cart');
+      })
+      .catch(error => console.error('Error:', error));
+    }
+
+    function generateOrderId() {
+      return Math.random().toString(36).substr(2, 9); 
+    }
+  </script>
+</body>
+</html>
